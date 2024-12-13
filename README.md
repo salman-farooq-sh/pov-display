@@ -1,6 +1,6 @@
 ## Introduction
 
-This is a cylindrical [POV Display](https://en.wikipedia.org/wiki/Persistence_of_vision#LED_POV_displays). The cylinder is 18 pixels (LEDs) high. The circumference of the cyclinder can be divided up into as many virtual pixels as needed programmaticaly. The default value has been set to 240 pixels. Thus the default effective resolution of this display is 240 pixels wide by 18 pixels high. Because the display is cylindrical, the entirety of it is never visible to an observer, so for the demonstrations that follow, only a quarter of the display has been used. Thus the viewing area has reduced to 60 pixels by 18 pixels. 
+This is a cylindrical [POV Display](https://en.wikipedia.org/wiki/Persistence_of_vision#LED_POV_displays). The cylinder is 18 pixels (LEDs) high. The circumference of the cyclinder can be divided up into as many virtual columns as needed programmaticaly. The default value has been set to 240 pixels. Thus the default effective resolution of this display is 240 pixels wide by 18 pixels high. Because the display is cylindrical, the entirety of it is never visible to an observer, so for the demonstrations that follow, only a quarter of the display has been used, thus the viewing area has reduced to 60 pixels by 18 pixels. 
 
 This is an MVP and it merely shows some of the capabilities of the assembled hardware. See [Future Plans](#future-plans).
 
@@ -41,7 +41,6 @@ Commands | Descriptions
 + **The Zig-Zag Arrangement of LEDs:** The Perf Board was not able to accomodate 18 LEDs in a straight line because the LEDs took too much space. They were arranged into a Zig-Zag pattern for a denser packing. But this introduced considerable complexity in the control logic of LEDs as displaying a picture with a straight line of LEDs is different than what we have here.
 
 + **The HC-05 Bluetooth Module:** Even the maximum baud rate of HC-05 was insufficient to transmit a live free-style frame. The solution was a special encoding of frame data before sending it and decoding it in Arduino. A custom technique was devised which reduced the frame size by a factor of 8.
-
 
 + **Arduino's Memory Limits:** The available flash memory of Arduino Nano is ~30KB. Storing even a single frame was posing to be a challenge so the plans were changing to transferring the data column by column instead of frame by frame. But thankfully, the encoding technique resolved this issue.
 

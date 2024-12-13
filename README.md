@@ -8,11 +8,11 @@ This is an MVP and it merely shows some of the capabilities of the assembled har
 ![the circuit diagram of the project](images/circuit_diagram.png "the circuit is very simple, nothing fancy here")
 
 ## Pictures of Assembled Hardware
-<img src="images/assembled_hardware/1.jpg" width="500">
-<img src="images/assembled_hardware/2.jpg" width="500">
-<img src="images/assembled_hardware/3.jpg" width="500">
-<img src="images/assembled_hardware/4.jpg" width="500">
-<img src="images/assembled_hardware/5.jpg" width="500">
+<img src="images/assembled_hardware/1.jpg">
+<img src="images/assembled_hardware/2.jpg">
+<img src="images/assembled_hardware/3.jpg">
+<img src="images/assembled_hardware/4.jpg">
+<img src="images/assembled_hardware/5.jpg">
 
 ## Steps to Run
 1. Press the Power ON button.
@@ -35,7 +35,7 @@ Commands | Descriptions
 `q`       | Revert the last command (except `p`).
 
 ## Demonstrations
-<img src="images/final.gif" width="500">
+<img src="images/final.gif">
 
 ## Challenges Faced
 + **The Zig-Zag Arrangement of LEDs:** The Perf Board was not able to accomodate 18 LEDs in a straight line because the LEDs took too much space. They were arranged into a Zig-Zag pattern for a denser packing. But this introduced considerable complexity in the control logic of LEDs as displaying a picture with a straight line of LEDs is different than what we have here.
